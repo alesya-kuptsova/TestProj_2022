@@ -64,9 +64,20 @@
             </legend>
             <input type="text" id="input" size="20" value="" /> <small>Something</small><br />
         </fieldset>
-        <script>
-                    // Add your code here
-        </script>
+       <script type="text/javascript">
+        var vowelCount= document.getElementById('vowelCount');
+        function countVowel(str){
+            str = str.toLowerCase();
+            let vowArr = ['a','e','i','o','u'], counter = 0;
+            for(let letter of str){
+                if(vowArr.includes(letter)){
+                    counter++;
+                }
+            }
+            vowelCount.innerHTML = counter;
+
+        }
+    </script>
     </form>
     <h2>Task 4</h2>
     <h3>Fibonacci</h3>
